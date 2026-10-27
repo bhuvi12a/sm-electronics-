@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-base: #061426;
+    --navy-deep: #030811;
+    --navy-elevated: #0a1f38;
+    --vivid-red: #F32635;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #e2e8f0;
+    background-color: #061426;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Typography Utilities */
+.font-display {
+  font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Cinematic lighting effects */
+.bg-circuit-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(243, 38, 53, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.text-gradient-white {
+  background: linear-gradient(180deg, #FFFFFF 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, #ff4d5a 0%, #F32635 60%, #b81522 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-subtle-navy {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-red-glow {
+  border-color: rgba(243, 38, 53, 0.35);
+  box-shadow: 0 0 25px -4px rgba(243, 38, 53, 0.2);
+}
+
+/* Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030811;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F32635;
+}
